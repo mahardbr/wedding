@@ -26,10 +26,17 @@
       href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
       rel="stylesheet"
     />
+    <script
+    src="https://kit.fontawesome.com/7fb390a8bb.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="stylesheet" href="css/styles.css" />
     <title>Ceridwen & Randy's Wedding</title>
   </head>
   <body>
+    <div class="hearts">
+      <img src="images/hearts2.png" alt="Hearts" width="50px">
+    </div>
     <div>
       <a name="top"></a>
       <header>
@@ -47,17 +54,20 @@
     </section> -->
     <section class="nav">
       <div class="topnav" id="myTopnav">
-        <a href="#story" class="active">Story</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#party">Wedding Party</a>
-        <a href="#venue">Venue</a>
-        <a href="#directions">Directions</a>
-        <a href="#registry">Registry</a>
-        <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+        <div class="wordnav">
+          <a href="#story" class="active">Story</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#party">Wedding Party</a>
+          <a href="#venue">Venue</a>
+          <a href="#directions">Directions</a>
+          <a href="#registry">Registry</a>
+          <a href="#contact">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+     
       </div>
 
       <script>
@@ -119,7 +129,7 @@
         <a href="#top">Back to top</a>
       </div>
       <hr class="hr1" />
-      <div class="Gallery">
+      <div class="Gallery" id="gallery">
         <h2>Our Photo Album</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
@@ -221,7 +231,7 @@
                 <div>Bronwen - Maid of Honor, <br />Sister of the Bride</div>
               </div>
               <div class="col-sm-4">
-                <img src="images/galen.png" alt="Galen" />
+                <img src="images/galen5.png" alt="Galen" />
                 <div>Galen - Man of Honor, <br />Brother of the Bride</div>
             </div>
             <div class="col-sm-4">
@@ -251,19 +261,19 @@
             <div class="row">
               <div class="col-sm-4">
                 <div>
-                  <img src="images/jesse.png" alt="Jesse" />
+                  <img src="images/jesse2.png" alt="Jesse" />
                   <div>Jesse - Best Man</div>
                 </div>
               </div>
               <div class="col-sm-4">
                 <div>
-                  <img src="images/jesse.png" alt="Ed" />
+                  <img src="images/edsq.png" alt="Ed" />
                   <div>Ed - Groomsman</div>
                 </div>
               </div>
               <div class="col-sm-4">
                 <div>
-                  <img src="images/paul.webp" alt="Forrest" />
+                  <img src="images/jesse.png" alt="Forrest" />
                   <div>Forrest - Groomsman</div>
                 </div>
               </div>
@@ -324,6 +334,7 @@
       <hr class="hr1" />
       <div>
         <h2 id="registry">Registry</h2>
+        <i class="fa-solid fa-car"></i>
         <p>
           Your presence is all we request! If you do wish to bestow a material
           gift upon us, we would accept gratefully. We have compiled the
@@ -359,10 +370,10 @@
 
       <form action="/action_page.php">
         <label for="cars"
-          >Poll: What should Ceridwen and Randy choose as their last
+          >Bonus Poll: What should Ceridwen and Randy choose as their last
           name?</label
         >
-        <select id="cars" name="cars">
+        <select id="names" name="names" date-netlify="true">
           <option value="mittens">Mittens</option>
           <option value="mahardy">Mahardy</option>
           <option value="briggs">Briggs</option>

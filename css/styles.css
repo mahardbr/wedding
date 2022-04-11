@@ -4,6 +4,7 @@ body {
   border: 5px solid lightblue;
   margin: 0;
   padding: 20px;
+  background-color: whitesmoke;
 }
 
 hr {
@@ -46,7 +47,7 @@ header {
 }
 
 .hero img {
-  border: 7px solid lightblue;
+  border: 5px solid lightblue;
   max-width: 90%;
 }
 
@@ -54,11 +55,18 @@ header {
   width: 200px;
 }
 
+.heart {
+  width: 50px;
+}
 .row {
   padding: 15px 10px;
 }
 
 .col-sm-4 img {
+  padding-bottom: 5px;
+}
+
+.col-sm-4 {
   padding-bottom: 5px;
 }
 .person {
@@ -233,9 +241,6 @@ ul {
     float: right;
     display: block;
   }
-}
-
-@media screen and (max-width: 700px) {
   .topnav.responsive {
     position: relative;
   }
@@ -249,5 +254,48 @@ ul {
     float: none;
     display: block;
     text-align: left;
+  }
+  .hero img {
+    max-width: 100%;
+  }
+
+  .nav {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    align-content: middle;
+    margin: 0px auto 12px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .hero img {
+    max-width: 100%;
+  }
+
+  .nav {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    align-content: middle;
+    margin: 0px auto 12px;
+  }
+  .wordnav {
+    display: flex;
+    justify-content: center;
   }
 }
