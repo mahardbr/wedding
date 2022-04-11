@@ -54,6 +54,17 @@ header {
   width: 200px;
 }
 
+.row {
+  padding: 15px 10px;
+}
+
+.col-sm-4 img {
+  padding-bottom: 5px;
+}
+.person {
+  flex-direction: row;
+}
+
 .nav {
   max-width: 90%;
   align-items: center;
@@ -67,11 +78,12 @@ header {
   flex-direction: row;
   display: block;
   align-content: center;
+  width: 100%;
 }
 
 .bridal img {
   border-radius: 150px;
-  width: 100px;
+  width: 150px;
   filter: grayscale(100%);
 }
 
