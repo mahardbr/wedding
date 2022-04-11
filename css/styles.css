@@ -1,7 +1,7 @@
 body {
   font-family: "Lora", serif;
   text-align: center;
-  border: 5px solid lightblue;
+  border: 5px solid #889bae;
   margin: 0;
   padding: 20px;
   background-color: whitesmoke;
@@ -25,7 +25,8 @@ h1 {
   text-transform: uppercase;
   font-size: 40px;
   font-style: italic;
-  margin: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 nav {
@@ -47,7 +48,7 @@ header {
 }
 
 .hero img {
-  border: 5px solid lightblue;
+  border: 5px solid #889bae;
   max-width: 90%;
 }
 
@@ -62,6 +63,10 @@ header {
   padding: 15px 10px;
 }
 
+.bridaltext {
+  color: lightblue;
+}
+
 .col-sm-4 img {
   padding-bottom: 5px;
 }
@@ -74,7 +79,7 @@ header {
 }
 
 .nav {
-  max-width: 90%;
+  max-width: 100%;
   align-items: center;
   text-align: center;
   align-content: middle;
@@ -288,7 +293,7 @@ ul {
   }
 
   .nav {
-    max-width: 100%;
+    max-width: 1290px;
     align-items: center;
     text-align: center;
     align-content: middle;

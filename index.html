@@ -41,9 +41,41 @@
       <a name="top"></a>
       <header>
         <h1>Ceridwen and Randall</h1>
+        
       </header>
     </div>
+    <p id="demo"></p>
 
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Aug 13 2022").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + " Days to Go! ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "We did it!";
+      }
+    }, 1000);
+    </script>
+    
     <!-- <section class="bgimage">
       <div class="main">
         <div class="floatcenter">
@@ -262,7 +294,7 @@
               <div class="col-sm-4">
                 <div>
                   <img src="images/jesse2.png" alt="Jesse" />
-                  <div>Jesse - Best Man</div>
+                  <div class="bridaltext">Jesse - Best Man</div>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -313,6 +345,7 @@
       <hr />
       <div>
         <h2 id="venue">Venue</h2>
+       
         <p>
           <a href="https://www.maisonalbion.com/" target="blank"
             >Maison Albion 13800 W County House Road, Albion, NY, 14411</a
@@ -320,7 +353,9 @@
         </p>
       </div>
       <div>
-        <h2 id="directions">Getting There</h2>
+        <h2 id="directions">Directions</h2>
+        <i class="fa-solid fa-car"></i>
+        <br/>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.5757218428694!2d-78.2329701845271!3d43.218387579138685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d40bd16e61adb3%3A0xcb093286f34d2f64!2sMaison%20Albion!5e0!3m2!1sen!2suk!4v1648426793064!5m2!1sen!2suk"
           width="90%"
@@ -334,7 +369,7 @@
       <hr class="hr1" />
       <div>
         <h2 id="registry">Registry</h2>
-        <i class="fa-solid fa-car"></i>
+       
         <p>
           Your presence is all we request! If you do wish to bestow a material
           gift upon us, we would accept gratefully. We have compiled the
@@ -367,18 +402,21 @@
           >Contact</a
         >
       </div>
-
+<hr>
       <form>
         <label for="names"
           >Bonus Poll: What should Ceridwen and Randy choose as their last
           name?</label
         >
+        <br>
+        <br>
         <select id="names" name="names" date-netlify="true">
           <option value="mittens">Mittens</option>
           <option value="mahardy">Mahardy</option>
           <option value="briggs">Briggs</option>
         </select>
-        <input type="submit" />
+        <br/><br>
+        <input class="button" type="submit" />
       </form>
 
       <div class="back"><a href="#top">Back to top</a></div>
